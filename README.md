@@ -1,7 +1,7 @@
 # Packaging Guide for QuickNote
 
 This guide details the steps to package the QuickNote source code into a standalone desktop installer (e.g., `.exe` for Windows).
-
+(You can use 7z to directly unzip the compressed file from QuickNote Setup 1.0.0 Folder.)
 ## Prerequisites
 
 Before you begin, ensure you have the following installed on your development machine:
