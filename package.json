@@ -1,0 +1,48 @@
+{
+  "name": "quick-note",
+  "version": "1.0.0",
+  "description": "A lightweight sticky note application with floating window and markdown support",
+  "main": "src/main/main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+  "keywords": [
+    "electron",
+    "note",
+    "sticky-note",
+    "markdown"
+  ],
+  "author": "User",
+  "license": "MIT",
+  "build": {
+    "appId": "com.example.quicknote",
+    "productName": "QuickNote",
+    "directories": {
+      "output": "release"
+    },
+    "win": {
+      "target": "nsis",
+      "verifyUpdateCodeSignature": false
+    },
+    "compression": "maximum",
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "deleteAppDataOnUninstall": true
+    },
+    "mac": {
+      "target": "dmg"
+    },
+    "linux": {
+      "target": "AppImage"
+    }
+  },
+  "devDependencies": {
+    "electron": "^28.1.0",
+    "electron-builder": "^24.9.1"
+  },
+  "dependencies": {
+    "markdown-it": "^14.1.0"
+  }
+}
